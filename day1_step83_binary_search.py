@@ -10,6 +10,6 @@ def binary_search(arr, target):
         else:
             hi = mid - 1
     return None
-numbers = [1,3,5,7,9,11,13]
-print(binary_search(numbers, 7))
-print(binary_search(numbers, 24))
+numbers = [10, 20, 30, 40, 50, 60, 70]
+print(binary_search(numbers, 50))        
+print(binary_search(numbers, 25))
