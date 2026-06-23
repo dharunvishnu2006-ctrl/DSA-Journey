@@ -30,6 +30,7 @@ alerts = [64, 34, 25, 12, 22, 11, 90]
 
 print("Before:", alerts)
 print("After: ", merge_sort(alerts))
+
 def merge_count(left, right):
     result = []
     inversions = 0     
