@@ -20,3 +20,4 @@ class UnionFind:
             self.parent[root_y] = root_x
             self.rank[root_x] += 1
         return True
+    

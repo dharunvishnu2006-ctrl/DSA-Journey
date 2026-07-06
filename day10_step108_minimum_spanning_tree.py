@@ -25,4 +25,4 @@ def kruskal_mst(n, edges):
             mst_cost += weight
             mst_edges.append((u, v, weight))
 
-    return mst_cost, mst_edges    
+    return mst_cost, mst_edges  
