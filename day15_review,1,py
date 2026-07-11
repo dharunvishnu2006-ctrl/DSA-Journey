@@ -1,0 +1,19 @@
+def build_lps(s):
+    lps = [0] * len(s)
+    length = 0
+    i = 1
+
+    while i < len(s):
+        if s[i] == s[length]:
+            length += 1
+            lps[i] = length
+            i += 1
+        elif length:
+            length = lps[length - 1]
+        else:
+            i += 1
+    return lps
+
+def longest_prefix_suffix(s):
+    return build_lps(s)[-1]
+print(longest_prefix_suffix("abab"))
