@@ -46,22 +46,21 @@ def maxArea(height):
     return max_water
 print(maxArea( [1,8,6,2,5,4,8,3,7]))
 
-def lenghtOfLongestSubstring(s):
+def lengthOfLongestSubstring_fixed(s):
     seen = {}
     left = 0
     max_length = 0
 
     for right in range(len(s)):
         char = s[right]
-
         if char in seen and seen[char] >= left:
-            left = seen[char] + 1       
-
-        seen[char] = right              
+            left = seen[char] + 1
+        seen[char] = right
         max_length = max(max_length, right - left + 1)
+
     return max_length
 
-print(lenghtOfLongestSubstring("abcabcbb"))
+print(lengthOfLongestSubstring_fixed("abba"))
 
 def groupAnagrams(strs):
     groups = {}                       
